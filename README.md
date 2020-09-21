@@ -134,4 +134,4 @@ which will let us to come to some actionable changes. From my point of view, for
 doesn't have enough friction removed in the order process (etc). 
 
 #### Customer Journey Map
-![Journey map](./img/Customer Journey map Ikea.png)
+![Journey map](./img/journey_map.png)
