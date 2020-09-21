@@ -1,0 +1,15 @@
+curl --location --request POST 'https://api.exponea.com/track/v2/projects/d7809db4-3909-11e9-9a0e-0a580a202e2c/customers/events' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Basic bHI5Z3Nxb3Rlb3VxN3pyYTk5dTRtYXNnc3FmYmZ2ZnYzaDR5czNuenZrempkc293eGk3Ym9hd3Jzd2N1bGkxeTpqYWlmMmkzaWJjczNibjgydGpvNmc0cmljZDBnNW1vcWhhYTV0aG42M25vNnZlNzZwbmpkdmZzMWo4dzVhYnYx' \
+--data-raw '{
+    "customer_ids": {"cookie": "ac568a0e-1919-4fe0-86b4-5a1db14a8284"},
+    "properties": {
+        "Item_id": "item_1",
+        "Item_name": "some_name",
+        "Price": 100.12,
+        "Quantity": 1,
+        "Purchase_id": "purchase_1234",
+        "Item_on_sale": true
+    },
+    "event_type": "purchase_item"
+}'

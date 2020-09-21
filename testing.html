@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <title>Boring example's Homepage</title>
+</head>
+<body>
+<h1>Hello world!!</h1>
+<script type="text/javascript" src="ikea_tracking.js"></script>
+
+<script>
+    let jq = document.createElement('script');
+    jq.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js";
+    document.getElementsByTagName('head')[0].appendChild(jq);
+    // ... give time for script to load, then type (or see below for non wait option)
+    jQuery.noConflict();
+</script>
+
+<script>
+    //alternatively I could check for Homepage in meta[property='og:title'] or document.title
+    if ( window.location.pathname == '/' ){
+        track_homepage();
+        //product URL no longer contain /product so checking via meta[property='og:type']
+    } else if (document.querySelector("meta[property='og:type']").getAttribute('content') == 'product' ){
+        track_product();
+    } else if (window.location.pathname.includes('shoppingcart')){
+        track_shoppingbag();
+    } else if (window.location.pathname.includes('search')){
+        track_search();
+    }
+</script>
+</body>
+</html>
