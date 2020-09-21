@@ -102,7 +102,7 @@ curl --location --request POST 'https://api.exponea.com/track/v2/projects/d7809d
 Here I will demonstrate the use case using pseudo-code. The cookie would be set with its maxAge parameter to distant 
 future, to ensure the code works - unless the customer deletes his cookies.<br>
 #### **`pseudo_AB_test.js`**
-```javascript
+```
 check if ab_test_cookie is present in user browser
     //true branch
     check if ab_test cookie == yellow
