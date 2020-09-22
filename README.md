@@ -119,7 +119,7 @@ else
     else
         //false branch
         get the buttons and change its color to yellow
-        set the ab_test_cookie =  ab_test_cookie=yellow
+        set the ab_test_cookie = yellow
 ```
 
 
